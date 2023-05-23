@@ -1,7 +1,15 @@
+import { menuItemsData } from "./Data";
+import Menuitems from "./Menuitem";
 import "./style.css";
 
 const Menu = () => {
-  return <div>Menu from common</div>;
+  return (
+    <main>
+      {menuItemsData.map((item) => (
+        <Menuitems item={item} />
+      ))}
+    </main>
+  );
 };
 
 export default Menu;

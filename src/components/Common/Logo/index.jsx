@@ -1,7 +1,14 @@
 import "./style.css";
+import Logoimg from "../../Common/Logo/logo.png";
 
 const Logo = () => {
-  return <p>Logo</p>;
+  return (
+    <div className="logo">
+      <div>
+        <img src={Logoimg} alt="logo" />
+      </div>
+    </div>
+  );
 };
 
 export default Logo;
