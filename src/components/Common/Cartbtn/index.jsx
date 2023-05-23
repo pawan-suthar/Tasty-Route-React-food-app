@@ -1,7 +1,13 @@
 import "./style.css";
 
-const Cartbtn = () => {
-  return <div>Cartbtn</div>;
+const Cartbtn = ({ cartcount }) => {
+  return (
+    <div className="btncartcounter">
+      {" "}
+      cart
+      <div className="count">{cartcount >= 100 ? "99+" : cartcount}</div>
+    </div>
+  );
 };
 
 export default Cartbtn;
