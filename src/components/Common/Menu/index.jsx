@@ -4,11 +4,14 @@ import "./style.css";
 
 const Menu = () => {
   return (
-    <main>
-      {menuItemsData.map((item) => (
-        <Menuitems key={item.id} item={item} />
-      ))}
-    </main>
+    <>
+      <h1 className="all">All Items</h1>
+      <main>
+        {menuItemsData.map((item) => (
+          <Menuitems key={item.id} item={item} />
+        ))}
+      </main>
+    </>
   );
 };
 

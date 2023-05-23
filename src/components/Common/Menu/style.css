@@ -6,24 +6,43 @@ main {
     grid-row-gap: 5rem;
 }
 
+.all{
+    align-items: center;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
 @media (max-width: 935px) {
     main {
         grid-template-columns: repeat(4, 1fr);
+    }
+    .all{
+        font-size: 45px;
     }
 }   
 @media (max-width: 735px) {
     main {
         grid-template-columns: repeat(3, 1fr);
     }
+    .all{
+        font-size: 35px;
+    }
 }   
 @media (max-width: 535px) {
     main {
         grid-template-columns: repeat(2, 1fr);
     }
+    .all{
+        font-size: 25px;
+    }
 }   
 @media (max-width: 335px) {
     main {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .all{
+        font-size: 25px;
     }
 }   
 
